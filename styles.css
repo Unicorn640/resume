@@ -1,0 +1,160 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f4f7fb;
+  color: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+}
+
+.page-container {
+  max-width: 840px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 26px;
+  padding: 32px;
+  box-shadow: 0 28px 60px rgba(15, 23, 42, 0.08);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 28px;
+  align-items: start;
+  margin-bottom: 36px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.82rem;
+  color: #3b82f6;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 3vw, 3.4rem);
+  margin: 0 0 18px;
+  line-height: 1.05;
+}
+
+.summary {
+  line-height: 1.8;
+  font-size: 1.03rem;
+  max-width: 42rem;
+}
+
+.contact-card {
+  padding: 24px;
+  border-radius: 22px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  font-size: 0.96rem;
+}
+
+.contact-card p {
+  margin: 0 0 12px;
+}
+
+.contact-card a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+main section {
+  margin-bottom: 32px;
+}
+
+main h2 {
+  font-size: 1.25rem;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+main h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 44px;
+  height: 3px;
+  background: #2563eb;
+  border-radius: 999px;
+}
+
+.item,
+.project-card {
+  padding: 24px;
+  border-radius: 22px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.item + .item,
+.project-card + .project-card {
+  margin-top: 18px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.item-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.item-header span {
+  color: #475569;
+  font-weight: 600;
+}
+
+.item-meta {
+  color: #64748b;
+  margin: 10px 0 14px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 18px;
+  line-height: 1.75;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.chips span {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 720px) {
+  body {
+    padding: 16px;
+  }
+
+  .page-container {
+    padding: 24px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}
